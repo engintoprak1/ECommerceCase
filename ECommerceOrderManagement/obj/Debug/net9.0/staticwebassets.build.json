@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "b10YeGvRC5ShgNdVduh+5HXIHLvsSHuDDufou0t48AM=",
+  "Source": "ECommerceOrderManagement",
+  "BasePath": "_content/ECommerceOrderManagement",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
