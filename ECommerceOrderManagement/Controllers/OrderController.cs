@@ -1,7 +1,7 @@
-﻿using Application.Abstract;
-using Business.Abstract;
-using Domain.Concrete.Dtos;
-using Domain.Results;
+﻿using Business.Abstract;
+using Domain.Concrete.Dtos.Order;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerceOrderManagement.Controllers;
@@ -14,6 +14,15 @@ public class OrderController(IOrderService orderService, IOrderDetailService ord
     public async Task<IActionResult> CreateOrder(OrderInfoDto request)
     {
         Domain.Results.IResult result = await orderService.CreateOrder(request);
+
+        return result.Success ? Ok(result) : BadRequest(result.Message);
+    }
+
+    [HttpGet("get-all")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    public async Task<IActionResult> GetAll()
+    {
+        var result = await orderService.GetAll();
 
         return result.Success ? Ok(result) : BadRequest(result.Message);
     }

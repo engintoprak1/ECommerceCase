@@ -1,8 +1,9 @@
 ﻿using Business.Abstract;
 using DataLayer.Abstract;
 using DataLayer.Concrete;
-using Domain.Concrete.Dtos;
-using Domain.Concrete.Entities;
+using Domain.Concrete.Dtos.Order;
+using Domain.Concrete.Entities.Book;
+using Domain.Concrete.Entities.Order;
 using Domain.Results;
 
 namespace Business.Concrete;

@@ -1,6 +1,6 @@
 ﻿using Domain.Abstract;
 
-namespace Domain.Concrete.Entities;
+namespace Domain.Concrete.Entities.Order;
 
 public sealed class Order : Entity
 {

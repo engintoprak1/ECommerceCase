@@ -1,4 +1,4 @@
-﻿using Domain.Concrete.Entities;
+﻿using Domain.Concrete.Entities.Order;
 
 namespace DataLayer.Abstract;
 

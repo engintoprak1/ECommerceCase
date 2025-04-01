@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Domain.Concrete.Dtos.OrderInfoDto",
+        "Type": "Domain.Concrete.Dtos.Order.OrderInfoDto",
         "IsRequired": true
       }
     ],
@@ -29,6 +29,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerceOrderManagement.Controllers.OrderController",
+    "Method": "GetAll",
+    "RelativePath": "api/Order/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -59,6 +69,54 @@
         "Name": "orderId",
         "Type": "System.Int32",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerceOrderManagement.Controllers.AuthController",
+    "Method": "AddRoleAsync",
+    "RelativePath": "Auth/add-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Domain.Concrete.Dtos.Role.AddRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerceOrderManagement.Controllers.AuthController",
+    "Method": "LoginAsync",
+    "RelativePath": "Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Domain.Concrete.Dtos.Auth.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerceOrderManagement.Controllers.AuthController",
+    "Method": "RegisterAsync",
+    "RelativePath": "Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Domain.Concrete.Dtos.Auth.RegisterDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

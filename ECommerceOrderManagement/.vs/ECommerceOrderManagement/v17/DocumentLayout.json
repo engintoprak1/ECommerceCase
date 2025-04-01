@@ -1,7 +1,31 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\ECommerceOrderManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD4D827-DA56-4227-B7B7-142E7258612C}|..\\Domain\\Domain.csproj|c:\\users\\engin\\desktop\\subjects\\ecommerce\\domain\\attributes\\ratelimitbyuserattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2787E2BD-E232-4D4C-9E27-0B3992F04946}|ECommerceOrderManagement.csproj|c:\\users\\engin\\desktop\\subjects\\ecommerce\\ecommerceordermanagement\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2787E2BD-E232-4D4C-9E27-0B3992F04946}|ECommerceOrderManagement.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F28BD7E-E312-8462-8337-A340DB4A4A9E}|..\\Business\\Business.csproj|c:\\users\\engin\\desktop\\subjects\\ecommerce\\business\\concrete\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2787E2BD-E232-4D4C-9E27-0B3992F04946}|ECommerceOrderManagement.csproj|c:\\users\\engin\\desktop\\subjects\\ecommerce\\ecommerceordermanagement\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2787E2BD-E232-4D4C-9E27-0B3992F04946}|ECommerceOrderManagement.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F28BD7E-E312-8462-8337-A340DB4A4A9E}|..\\Business\\Business.csproj|c:\\users\\engin\\desktop\\subjects\\ecommerce\\business\\concrete\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F28BD7E-E312-8462-8337-A340DB4A4A9E}|..\\Business\\Business.csproj|c:\\users\\engin\\desktop\\subjects\\ecommerce\\business\\concrete\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C67113D-D014-73C0-0102-DC0F568DCAE3}|..\\DataLayer\\DataLayer.csproj|c:\\users\\engin\\desktop\\subjects\\ecommerce\\datalayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +33,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\ECommerceOrderManagement\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\ECommerceOrderManagement\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T12:50:57.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Concrete\\TokenService.cs",
+              "RelativeDocumentMoniker": "..\\Business\\Concrete\\TokenService.cs",
+              "ToolTip": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Concrete\\TokenService.cs",
+              "RelativeToolTip": "..\\Business\\Concrete\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T12:38:28.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RateLimitByUserAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Domain\\Attributes\\RateLimitByUserAttribute.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Attributes\\RateLimitByUserAttribute.cs",
+              "ToolTip": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Domain\\Attributes\\RateLimitByUserAttribute.cs",
+              "RelativeToolTip": "..\\Domain\\Attributes\\RateLimitByUserAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T12:32:21.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\DataLayer\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\DataLayer\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\DataLayer\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\DataLayer\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T10:13:26.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\ECommerceOrderManagement\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\ECommerceOrderManagement\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABUAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T10:04:06.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Concrete\\OrderService.cs",
+              "RelativeDocumentMoniker": "..\\Business\\Concrete\\OrderService.cs",
+              "ToolTip": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Concrete\\OrderService.cs",
+              "RelativeToolTip": "..\\Business\\Concrete\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T10:02:36.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Concrete\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\Business\\Concrete\\AuthService.cs",
+              "ToolTip": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Concrete\\AuthService.cs",
+              "RelativeToolTip": "..\\Business\\Concrete\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:48:25.671Z",
+              "EditorCaption": ""
             }
           ]
         }

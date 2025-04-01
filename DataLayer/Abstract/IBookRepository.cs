@@ -1,4 +1,4 @@
-﻿using Domain.Concrete.Entities;
+﻿using Domain.Concrete.Entities.Book;
 
 namespace DataLayer.Abstract;
 

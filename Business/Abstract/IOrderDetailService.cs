@@ -1,5 +1,5 @@
-﻿using Domain.Concrete.Dtos;
-using Domain.Concrete.Entities;
+﻿using Domain.Concrete.Dtos.Order;
+using Domain.Concrete.Entities.Order;
 using Domain.Results;
 
 namespace Business.Abstract;

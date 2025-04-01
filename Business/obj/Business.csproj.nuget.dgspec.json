@@ -1,17 +1,112 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Application\\Business.csproj": {}
+    "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Application\\Business.csproj": {
+    "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Application\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Application\\Business.csproj",
+        "projectPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\ENGIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Application\\obj\\",
+        "outputPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ENGIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\DataLayer\\DataLayer.csproj"
+              },
+              "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[8.7.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\DataLayer\\DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\DataLayer\\DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\ENGIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -35,9 +130,6 @@
             "projectReferences": {
               "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Domain\\Domain.csproj"
-              },
-              "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Infrastructure\\DataLayer.csproj": {
-                "projectPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Infrastructure\\DataLayer.csproj"
               }
             }
           }
@@ -57,6 +149,20 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -123,86 +229,24 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Infrastructure\\DataLayer.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Infrastructure\\DataLayer.csproj",
-        "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Infrastructure\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\ENGIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Infrastructure\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\ENGIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net9.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
-        },
-        "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
-            "projectReferences": {
-              "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\ENGIN\\Desktop\\Subjects\\ECommerce\\Domain\\Domain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.3, )"
             },
-            "Microsoft.EntityFrameworkCore.Abstractions": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[9.0.3, )"
             },
-            "Microsoft.EntityFrameworkCore.InMemory": {
+            "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[9.0.3, )"
             }

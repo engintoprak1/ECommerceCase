@@ -1,8 +1,13 @@
 using Business;
 using DataLayer;
 using DataLayer.Context;
-using Domain.Concrete.Entities;
+using Domain.Concrete.Entities.Book;
+using Domain.Concrete.Entities.User;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,19 +17,56 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+// Add Identity
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
 builder.Services.AddBusinessRegistration();
 
 builder.Services.AddDataLayerRegistration();
 
-builder.Services.AddSwaggerGen(options =>
+builder.Services.AddSwaggerGen(c =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        Title = "My API",
-        Version = "v1",
-        Description = "Bu API, .NET 9 Core ile oluþturulmuþtur.",
+        Description = "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\"",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
     });
 });
+
+builder.Services.AddAuthorization();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(o =>
+    {
+        o.RequireHttpsMetadata = false;
+        o.TokenValidationParameters = new TokenValidationParameters
+        {
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]!)),
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            ClockSkew = TimeSpan.Zero
+        };
+    });
 
 var app = builder.Build();
 
@@ -56,8 +98,14 @@ if (!dbContext.Books.Any())
 
 app.UseHttpsRedirection();
 
+app.UseRouting();
+
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors("AllowAll");
 
 app.Run();

@@ -1,7 +1,7 @@
 ﻿using Domain.Abstract;
 using System.Text.Json.Serialization;
 
-namespace Domain.Concrete.Dtos;
+namespace Domain.Concrete.Dtos.Order;
 
 public sealed class OrderInfoDto : IDto
 {

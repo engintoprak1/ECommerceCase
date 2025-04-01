@@ -1,6 +1,6 @@
 ﻿using DataLayer.Abstract;
 using DataLayer.Context;
-using Domain.Concrete.Entities;
+using Domain.Concrete.Entities.Book;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataLayer.Concrete;

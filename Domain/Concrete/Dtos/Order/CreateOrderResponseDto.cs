@@ -1,4 +1,4 @@
-﻿namespace Domain.Concrete.Dtos;
+﻿namespace Domain.Concrete.Dtos.Order;
 
 public class CreateOrderResponseDto
 {

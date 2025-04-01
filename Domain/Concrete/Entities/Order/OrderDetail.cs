@@ -1,4 +1,4 @@
-﻿namespace Domain.Concrete.Entities;
+﻿namespace Domain.Concrete.Entities.Order;
 
 public class OrderDetail : Entity
 {

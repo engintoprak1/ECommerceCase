@@ -1,11 +1,10 @@
-﻿using Application.Abstract;
-using Business.Abstract;
+﻿using Business.Abstract;
 using DataLayer.Abstract;
-using Domain.Concrete.Dtos;
-using Domain.Concrete.Entities;
+using Domain.Concrete.Dtos.Order;
+using Domain.Concrete.Entities.Order;
 using Domain.Results;
 
-namespace Application.Concrete;
+namespace Business.Concrete;
 
 public class OrderService(IOrderRepository orderRepository, IOrderDetailService orderDetailService) : IOrderService
 {
@@ -28,7 +27,19 @@ public class OrderService(IOrderRepository orderRepository, IOrderDetailService 
 
         return new SuccessDataResult<CreateOrderResponseDto>(new CreateOrderResponseDto() { OrderId = createForOrder.Id, TotalAmount = createForOrder.TotalAmount });
     }
-    
+
+    public async Task<IDataResult<List<Order>>> GetAll()
+    {
+        List<Order> userOrders = await orderRepository.GetAll();
+
+        if (!userOrders.Any())
+        {
+            return new ErrorDataResult<List<Order>>("Order not found.");
+        }
+
+        return new SuccessDataResult<List<Order>>(userOrders);
+    }
+
 
     public async Task<IDataResult<List<Order>>> GetAllOrdersByUserId(int userId)
     {

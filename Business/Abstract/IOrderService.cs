@@ -1,12 +1,14 @@
-﻿using Domain.Concrete.Dtos;
-using Domain.Concrete.Entities;
+﻿using Domain.Concrete.Dtos.Order;
+using Domain.Concrete.Entities.Order;
 using Domain.Results;
 
-namespace Application.Abstract;
+namespace Business.Abstract;
 
 public interface IOrderService
 {
     Task<IDataResult<CreateOrderResponseDto>> CreateOrder(OrderInfoDto orderInfoDto);
+
+    Task<IDataResult<List<Order>>> GetAll();
 
     Task<IDataResult<List<Order>>> GetAllOrdersByUserId(int userId);
 
